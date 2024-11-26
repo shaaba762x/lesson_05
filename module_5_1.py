@@ -2,10 +2,12 @@ class hause:
     def __init__(self, name, number_of_floors):
         self.name = name
         self.number_of_floors = number_of_floors
-        
+
     def go_to(self, new_floor):
         self.new_floor = new_floor
-        if self.new_floor <= self.number_of_floors and self.new_floor > 0:
+        if self.new_floor < 0:
+           print(f'в {self.name} подвала нет.')
+        elif self.new_floor <= self.number_of_floors:
             for floor in range(1, self.new_floor+1):
                 print(floor)
                 if floor == self.number_of_floors:
