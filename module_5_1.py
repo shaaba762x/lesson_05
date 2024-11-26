@@ -5,7 +5,7 @@ class hause:
 
     def go_to(self, new_floor):
         self.new_floor = new_floor
-        if self.new_floor < 0:
+        if self.new_floor <= 0:
            print(f'в {self.name} подвала нет.')
         elif self.new_floor <= self.number_of_floors:
             for floor in range(1, self.new_floor+1):
