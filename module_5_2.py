@@ -20,12 +20,11 @@ class Hause:
         return self.number_of_floors
 
     def __str__(self):
-        print(f"Название: {self.name}, кол-во этажей: {self.number_of_floors}.")
-        return self.name
+        return f"Название: {self.name}, кол-во этажей: {self.number_of_floors}."
+
+
 h1 = Hause('ТЦ "Вавилон"', 122)
 h2 = Hause('ТЦ "Башня"', 5)
-# print(h1.name,'Этажей -',h1.number_of_floors)
-# print(h2.name,'Этажей -',h2.number_of_floors)
 _a = (int(input(f'Введите номер этажа на который хотите подняться: ',)))
 h1.go_to(_a)
 h2.go_to(_a)
